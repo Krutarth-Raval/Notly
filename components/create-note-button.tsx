@@ -27,7 +27,6 @@ import { toast } from "sonner";
 import { useState } from "react";
 import { Loader2 } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { createNote } from "@/server/notes";
 
 const formSchema = z.object({
   name: z.string().min(2).max(50),

@@ -23,7 +23,6 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { createNotebook } from "@/server/notebooks";
 import { toast } from "sonner";
 import { authClient } from "@/lib/auth-client";
 import { useState } from "react";

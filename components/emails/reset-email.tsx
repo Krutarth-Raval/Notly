@@ -54,7 +54,7 @@ const PasswordResetEmail = ({
               </Text>
               <Text className="text-[16px] text-gray-700 mb-[24px] m-0">
                 If you made this request, click the button below to reset your
-                password. If you didn't request a password reset, you can safely
+                password. If you didn&apos;t request a password reset, you can safely
                 ignore this email.
               </Text>
 
