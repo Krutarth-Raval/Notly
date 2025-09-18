@@ -8,7 +8,6 @@ import { cn } from "@/lib/utils";
 import { useScroll } from "motion/react";
 import { ModeSwitcher } from "./mode-switcher";
 
-const menuItems = [];
 
 export const HeroHeader = () => {
   const [menuState, setMenuState] = React.useState(false);

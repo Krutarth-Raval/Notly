@@ -46,12 +46,12 @@ import {
   Subscript,
 } from "lucide-react";
 import { Underline as UnderlineIcon } from "lucide-react";
-import { useCallback, useEffect, useRef } from "react";
+import { useCallback, useRef } from "react";
 
 interface RichTextEditorProps {
   content?: JSONContent;
   noteId?: string;
-  note?: any;
+  note?: { title?: string; notebookId?: string };
 }
 
 const RichTextEditor = ({ content, noteId, note }: RichTextEditorProps) => {
@@ -69,7 +69,7 @@ const RichTextEditor = ({ content, noteId, note }: RichTextEditorProps) => {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload),
         });
-      } catch (e) {
+      } catch {
         // swallow for now; could add toast
       }
     },
@@ -141,9 +141,9 @@ const RichTextEditor = ({ content, noteId, note }: RichTextEditorProps) => {
 
       saveTimeoutRef.current = setTimeout(() => {
         saveNote(noteId, {
-          title: note.title,
+          title: note?.title || "",
           content: latestContent as unknown as JSONContent,
-          notebookId: note.notebookId,
+          notebookId: note?.notebookId || "",
         });
         lastSavedContentRef.current = latestContentString;
       }, 500);

@@ -15,7 +15,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -25,7 +24,7 @@ import { Input } from "@/components/ui/input";
 import { signUpUser } from "@/server/users";
 import { useState } from "react";
 import { toast } from "sonner";
-import { Loader2, Router } from "lucide-react";
+import { Loader2 } from "lucide-react";
 import Link from "next/link";
 import { authClient } from "@/lib/auth-client";
 

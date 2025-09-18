@@ -24,7 +24,6 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
-import { deleteNote } from "@/server/notes";
 interface NoteCardProps {
   note:InsertNote;
 }
@@ -45,7 +44,7 @@ const [isOpen, setIsOpen] = useState(false);
         toast.success("Note deleted successfully");
         router.refresh();
       }
-    } catch (error) {
+    } catch {
       toast.error("Failed to delete note");
     } finally {
       setIsDeleting(false);

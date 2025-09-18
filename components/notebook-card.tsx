@@ -26,7 +26,7 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 interface NotebookCardProps {
-  notebook: Notebook & { notes: any[] };
+  notebook: Notebook & { notes: unknown[] };
 }
 
 export default function NotebookCard({ notebook }: NotebookCardProps) {
@@ -41,7 +41,7 @@ const [isOpen, setIsOpen] = useState(false);
         toast.success("Notebook deleted successfully");
         router.refresh();
       }
-    } catch (error) {
+    } catch {
       toast.error("Failed to delete notebook");
     } finally {
       setIsDeleting(false);
