@@ -63,7 +63,7 @@ export function LoginForm({
         toast.success(response.message);
         router.push("/dashboard");
       } else {
-        toast.error(response.message);
+        toast.error((response.message ? `  ${response.message}` : ""));
       }
     } catch (error) {
       console.error(error);
