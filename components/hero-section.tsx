@@ -120,25 +120,27 @@ export default function HeroSection() {
                 ...transitionVariants,
               }}
             >
-              <div className="relative -mr-56 mt-8 overflow-hidden px-2 sm:mr-0 sm:mt-12 md:mt-20">
+              <div className="relative mt-8 overflow-hidden px-2 sm:mt-12 md:mt-20">
                 <div
                   aria-hidden
-                  className="bg-linear-to-b to-background absolute inset-0 z-10 from-transparent from-35%"
+                  className="bg-linear-to-b to-background absolute inset-0 z-10 from-transparent from-50%"
                 />
-                <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-5xl overflow-hidden rounded-2xl border shadow-lg shadow-zinc-950/15 ring-1">
+                <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-5xl overflow-hidden rounded-2xl border shadow-lg shadow-zinc-950/15 ring-1 w-full">
                   <Image
-                    className="bg-background aspect-15/8 relative hidden rounded-2xl dark:block"
+                    className="bg-background aspect-15/8 relative hidden w-full h-auto rounded-2xl dark:block"
                     src="/BlackThemeDemo.png"
                     alt="app screen"
                     width="2700"
                     height="1440"
+                    priority
                   />
                   <Image
-                    className="z-2 border-border/25 aspect-15/8 relative rounded-2xl border dark:hidden"
+                    className="z-2 border-border/25 aspect-15/8 relative w-full h-auto rounded-2xl border dark:hidden"
                     src="/WhiteThemeDemo.png"
                     alt="app screen"
                     width="2700"
                     height="1440"
+                    priority
                   />
                 </div>
               </div>

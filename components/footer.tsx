@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function FooterSection() {
     return (
-        <footer className="py-16 md:py-28 border-1 border-t-border">
+        <footer className="py-16 md:py-28  border-t-1">
             <div className="mx-auto max-w-5xl px-6" >
                 <Link
                     href="/"

@@ -21,7 +21,7 @@ export async function PATCH(
     const result = await updateNote(id, { title, content, notebookId });
     const status = result.success ? 200 : 500;
     return NextResponse.json(result, { status });
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { success: false, message: "Failed to update note" },
       { status: 500 }
@@ -44,7 +44,7 @@ export async function DELETE(
     const result = await deleteNote(id);
     const status = result.success ? 200 : 500;
     return NextResponse.json(result, { status });
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { success: false, message: "Failed to delete note" },
       { status: 500 }

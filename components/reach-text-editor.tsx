@@ -321,7 +321,7 @@ const RichTextEditor = ({ content, noteId, note }: RichTextEditorProps) => {
     <div className="flex justify-center w-auto">
       <div className="max-w-[90svw] md:w-full bg-card text-card-foreground rounded-lg border">
         {/* Toolbar */}
-        <div className="w-auto flex items-center overflow-x-scroll gap-1 p-2 bg-muted/50 border-b">
+        <div className="w-auto flex items-center max-md:overflow-x-scroll gap-1 p-2 bg-muted/50 border-b">
           {/* Undo/Redo */}
           <Button
             variant="ghost"

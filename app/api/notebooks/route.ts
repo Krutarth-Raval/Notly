@@ -14,7 +14,7 @@ export async function POST(request: Request) {
     const result = await createNotebook({ name, userId });
     const status = result.success ? 201 : 500;
     return NextResponse.json(result, { status });
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { success: false, message: "Failed to create notebook" },
       { status: 500 }
