@@ -69,7 +69,7 @@ const PasswordResetEmail = ({
               </Section>
 
               <Text className="text-[14px] text-gray-600 mb-[16px] m-0">
-                If the button above doesn't work, you can also copy and paste
+                If the button above doesn&apos;t work, you can also copy and paste
                 the following link into your browser:
               </Text>
               <Text className="text-[14px] text-blue-600 break-all mb-[24px] m-0">
@@ -103,14 +103,14 @@ const PasswordResetEmail = ({
                 • Never share this reset link with anyone
               </Text>
               <Text className="text-[14px] text-gray-600 mb-[8px] m-0">
-                • If you didn't request this reset, your account is still secure
+                • If you didn&apos;t request this reset, your account is still secure
               </Text>
               <Text className="text-[14px] text-gray-600 mb-[16px] m-0">
                 • Consider using a strong, unique password for better security
               </Text>
 
               <Text className="text-[14px] text-gray-600 m-0">
-                If you're having trouble or didn't request this reset, please
+                If you&apos;re having trouble or didn&apos;t request this reset, please
                 contact our support team immediately.
               </Text>
             </Section>

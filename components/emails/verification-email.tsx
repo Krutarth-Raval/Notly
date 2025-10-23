@@ -55,14 +55,14 @@ const VerificationEmail = ({ userName, verificationUrl }: VerificationEmailProps
               </Section>
 
               <Text className="text-[14px] text-gray-600 mb-[16px] m-0">
-                If the button above doesn't work, you can also copy and paste the following link into your browser:
+                If the button above doesn&apos;t work, you can also copy and paste the following link into your browser:
               </Text>
               <Text className="text-[14px] text-blue-600 break-all mb-[24px] m-0">
                 {verificationUrl}
               </Text>
 
               <Text className="text-[14px] text-gray-600 mb-[16px] m-0">
-                This verification link will expire in 24 hours for security reasons. If you didn't create an account with us, you can safely ignore this email.
+                This verification link will expire in 24 hours for security reasons. If you didn&apos;t create an account with us, you can safely ignore this email.
               </Text>
             </Section>
 

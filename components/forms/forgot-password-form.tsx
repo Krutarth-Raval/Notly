@@ -15,7 +15,6 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -50,7 +49,6 @@ export function ForgotPasswordForm({
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
       setIsLoading(true);
-      const redirectBase = typeof window !== "undefined" ? window.location.origin : "";
       const {error} = await authClient.forgetPassword({
         email: values.email,
         redirectTo : `/reset-password`,
