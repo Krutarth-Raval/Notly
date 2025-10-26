@@ -11,6 +11,13 @@ import PasswordResetEmail from "@/components/emails/reset-email";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export const auth = betterAuth({
+    baseURL: process.env.NEXT_PUBLIC_BASE_URL || process.env.BASE_URL,
+    trustedOrigins: [
+        process.env.NEXT_PUBLIC_BASE_URL,
+        process.env.BASE_URL,
+        "https://notly-six.vercel.app",
+        "https://notly-krutarth-ravals-projects.vercel.app",
+    ].filter(Boolean) as string[],
     emailVerification: {
         sendVerificationEmail: async ({ user, url }, ) => {
             const { data, error } = await resend.emails.send({
